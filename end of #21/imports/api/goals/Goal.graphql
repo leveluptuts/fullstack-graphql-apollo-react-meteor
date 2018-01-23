@@ -1,0 +1,9 @@
+type Goal {
+  _id: String
+  name: String
+  completed: Boolean
+}
+
+extend type Mutation {
+  createGoal(name: String!, resolutionId: String!): Goal
+}
